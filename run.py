@@ -74,11 +74,11 @@ col1, col2, col3 = st.columns(3)
 with col1:
     gs = st.number_input("Specific Gravity (Gs)", min_value=2.0, max_value=3.0, step=0.01)
     omc = st.number_input("Optimum Moisture Content (OMC) (%)", min_value=0.0, max_value=100.0, step=0.1)
-    ll = st.number_input("Liquid Limit (LL) (%)", min_value=0.0, max_value=100.0, step=0.1)
+    ll = st.number_input("Liquid Limit (LL) (%)", min_value=0.0, max_value=500.0, step=0.1)
 
 with col2:
-    pl = st.number_input("Plastic Limit (PL) (%)", min_value=0.0, max_value=100.0, step=0.1)
-    pi = st.number_input("Plasticity Index (PI) (%)", min_value=0.0, max_value=100.0, step=0.1)
+    pl = st.number_input("Plastic Limit (PL) (%)", min_value=0.0, max_value=500.0, step=0.1)
+    pi = st.number_input("Plasticity Index (PI) (%)", min_value=0.0, max_value=500.0, step=0.1)
 
 with col3:
     clay = st.number_input("Clay Content (%)", min_value=0.0, max_value=100.0, step=0.1)
